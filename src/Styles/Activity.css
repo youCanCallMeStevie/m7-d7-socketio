@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+:root {
+  --blue-primary: rgb(12, 102, 194);
+  --border-color: #e0e0de;
+  --button-grey-text-color: #7f7f7f;
+  --hover-blue: rgb(233, 243, 253);
+}
+
+.activity-card-container {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.activity-card-container .MuiButtonBase-root {
+  color: var(--blue-primary);
+  text-decoration: none;
+}
+
+.activity-card-container .MuiButtonBase-root:hover {
+  background-color: var(--hover-blue);
+  text-decoration: none !important;
+}

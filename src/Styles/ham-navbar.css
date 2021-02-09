@@ -1,0 +1,29 @@
+.nav{
+    box-shadow: 10px black;
+    box-shadow: -3px 1px 13px 2px #0000004d;
+}
+  #ham-button {
+    display: none;
+  }
+  .hamburger-menu{
+    display: none;
+  }
+  .position-fixed{
+    z-index: 6666;
+  }
+  
+  /* Switch to hamburger menu on small devices */
+  @media only screen and ( max-width:1204px) {
+    #side-menu {display: none; width: 100%;}
+    #ham-button {display: block;}
+    .hamburger-menu{display: block;}
+  }
+  .dropdown-hamb{
+    display: -webkit-box;
+    overflow-y: hidden !important;
+    height: fit-content !important;
+  }
+  .dropdown-me{
+    display: -webkit-box;
+  }
+

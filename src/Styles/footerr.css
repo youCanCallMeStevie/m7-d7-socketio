@@ -1,0 +1,36 @@
+.footerPar {
+  margin-top: -0.1vw !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+}
+
+.helpText {
+  font-size: 12px;
+  color: #666666 !important;
+}
+
+.dropdownText {
+  font-size: 11px !important;
+  color: #666666 !important;
+}
+
+.dropdown-menu {
+  height: 350px;
+  overflow-y: scroll;
+}
+
+#dropdown-button-drop-up {
+  width: 10.5vw;
+}
+
+#dropdown-button-drop-up:hover {
+  /* height: 2.01vw; */
+  animation: normal !important;
+  /* border-width: 2px; */
+  background: transparent;
+  color: #89758f;
+}
+
+.home-footer{
+  margin-top:40px;
+}

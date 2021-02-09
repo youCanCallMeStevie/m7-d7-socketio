@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+:root {
+  --blue-primary: rgb(12, 102, 194);
+  --border-color: #e0e0de;
+  --button-grey-text-color: #7f7f7f;
+  --hover-blue: rgb(233, 243, 253);
+}
+
+.NewPostButton {
+  position: absolute;
+  width: 175px;
+  /* top: 100px; */
+  z-index: 99;
+  margin-left: 33%;
+  margin-top: 8px;
+  box-shadow: 5px 5px 5px #aaaaaa;
+}

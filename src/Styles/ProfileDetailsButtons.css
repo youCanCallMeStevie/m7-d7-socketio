@@ -1,0 +1,23 @@
+.profileDetailsButtons{
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+    color:var(--button-grey-text-color);
+}
+.profileDetailsButtons button{
+    margin-right: 10px;
+}
+
+.profileDetailsButtons .pen>svg{
+    cursor: pointer;
+    font-size: 2.3em;
+    padding: 5px;
+    border-radius: 50%;
+}
+.profileDetailsButtons .pen>svg:hover{
+    background-color: var(--border-color);
+
+}

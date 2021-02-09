@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+:root {
+  --blue-primary: rgb(12, 102, 194);
+  --border-color: #e0e0de;
+  --button-grey-text-color: #7f7f7f;
+  --hover-blue: rgb(233, 243, 253);
+}
+
+.pill-border-button {
+  border-radius: 20px;
+}
+
+.triangle-up {
+  width: 0 !important;
+  height: 0 !important;
+  border-left: 50px solid transparent !important;
+  border-right: 50px solid transparent !important;
+  border-bottom: 100px solid red !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 3;
+}
+
+img.user-avatar {
+  width: 75px !important;
+  object-fit: contain;
+}

@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+:root {
+  --blue-primary: rgb(12, 102, 194);
+  --border-color: #e0e0de;
+  --button-grey-text-color: #7f7f7f;
+  --hover-blue: rgb(233, 243, 253);
+}
+
+.elearning-card-container {
+  border-radius: 15px;
+}
+
+.card-title-learning {
+  text-transform: uppercase;
+  letter-spacing: 20em;
+  font-size: 8px;
+}
+
+.card-profile-images {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+}
+
+.video-play-button {
+  position: absolute;
+  margin-top: 12px;
+  margin-left: 25px;
+  color: white;
+  z-index: 2;
+}
+
+.edit-work-experience:hover {
+  display: block;
+}
+
+.people-card-container {
+  border-radius: 15px;
+  width: 25rem;
+  overflow: hidden;
+}
+
+.elearning-card-container .MuiButtonBase-root {
+  color: var(--blue-primary);
+  text-decoration: none;
+}
+
+.elearning-card-container .MuiButtonBase-root:hover {
+  background-color: var(--hover-blue);
+  text-decoration: none !important;
+}

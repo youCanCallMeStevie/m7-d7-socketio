@@ -1,0 +1,64 @@
+#cardd {
+  height: 7.5rem;
+  border-radius: 15px;
+}
+
+#startPost {
+  background: transparent !important;
+  color: #666666;
+  width: -webkit-fill-available;
+  height: 3rem;
+  border-color: #666666;
+  border-radius: 15px;
+  text-align: start;
+  font-size: small;
+  margin: 0.25rem;
+}
+.start-postbox{
+  padding: 0px !important;
+  flex: auto !important;
+}
+
+#startPost:hover {
+  background: #e7e7e7 !important;
+}
+@media only screen and (max-width: 995px){
+  .post-icons{
+    position: absolute;
+    top: 60px;
+    padding:0.25 !important;
+  }
+  .cardd .card-body{
+    padding:0.25 !important;
+  }
+}
+.add-btn {
+  height: 2.5rem;
+  background: transparent;
+  border-color: transparent;
+}
+
+.add-btn:hover {
+  background: #e7e7e7 !important;
+}
+
+#photo-btn {
+  color: #70b5f9 !important;
+}
+
+#video-btn {
+  color: #f0bf7e !important;
+}
+
+#event-btn {
+  color: #a1b4b8 !important;
+}
+
+#article-btn {
+  color: #7ec15e !important;
+}
+
+#startPost .MuiSvgIcon-root {
+  cursor: pointer;
+  margin-right: 10px;
+}

@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+:root {
+  --blue-primary: rgb(12, 102, 194);
+  --border-color: #e0e0de;
+  --button-grey-text-color: #7f7f7f;
+}
+
+.promoted-card-continer {
+  border-radius: 15px;
+  width: 25rem;
+}
+
+.card-title {
+  font-weight: 400px;
+}
+
+.card-images {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.show-more-list-link {
+  color: var(--blue-primary);
+  text-decoration: none;
+}

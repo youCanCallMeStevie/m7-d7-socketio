@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+:root {
+  --blue-primary: rgb(12, 102, 194);
+  --border-color: #e0e0de;
+  --button-grey-text-color: #7f7f7f;
+  --hover-blue: rgb(233, 243, 253);
+}
+
+.experience-education-container {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.card-title-expereince {
+  text-transform: uppercase;
+  letter-spacing: 20em;
+  font-size: 8px;
+}
+
+.experience-education-avatars {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+
+.job-position-experience {
+  font-size: 50px;
+  font-weight: 700px;
+}
+
+.experience-education-container .MuiButtonBase-root {
+  color: var(--blue-primary);
+  text-decoration: none;
+}
+
+.experience-education-container:hover .MuiButtonBase-root {
+  background-color: var(--hover-blue);
+  text-decoration: none !important;
+}
+
+.edit-info-icon .MuiSvgIcon-root:hover {
+  display: inline;
+}

@@ -1,0 +1,70 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.login__box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 0px 32px 32px;
+  border-radius: 8px;
+  margin: 0 auto;
+  background: #fff;
+  min-width: 352px;
+  max-width: 400px;
+  width: 40vw;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.login__box > input {
+  margin: 12px 0px;
+  font-size: 1rem;
+  line-height: 1.42857;
+  font-weight: 400;
+  -webkit-transition-duration: 334ms;
+  transition-duration: 334ms;
+  -webkit-transition-property: border-color, -webkit-box-shadow;
+  transition-property: border-color, -webkit-box-shadow;
+  transition-property: border-color, box-shadow;
+  transition-property: border-color, box-shadow, -webkit-box-shadow;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  padding: 0 10px;
+  width: 100%;
+  outline: 0;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.9);
+}
+.login__box > .btn-primary {
+  width: 100%;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: inherit;
+  overflow: hidden;
+  padding: 15px 24px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition-duration: 167ms;
+  transition-duration: 167ms;
+  background: var(--blue-primary);
+  border-radius: 28px;
+  cursor: pointer;
+}
+.login__box > svg {
+  transform: translateY(-50px);
+  margin-left: -25px;
+}
