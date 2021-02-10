@@ -1,26 +1,43 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Styles/ChatBox.css";
 import io from "socket.io-client";
 import { Modal, InputGroup, FormControl, Button } from "react-bootstrap";
+import AppContext from "../Context/app-context";
 
-function ChatBox() {
+/**
+ *  
+ *  1- in cdm join with your username , current active users
+ *  2- fetch previous messages and set to state
+ *  3- when user selected save it to satte , send message with bmsg event
+ * 
+ */
+function ChatBox(user,users) {
   const connOpt = {
-    transports: ["websocket", "polling"],
+    transports: ["websocket"],
   };
 
-  let socket = io("https://striveschool.herokuapp.com/", connOpt);
+  let socket = io("https://striveschool-api.herokuapp.com", connOpt);
 
   const [username, setUsername] = useState(null);
+  const [currentUser, setCurrentUser] = useState("");
   const [message, setMessage] = useState("");
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState ([]);
   const [showModal, setShowModal] = useState(true);
+  const [selectedUser, setSelectedUser] = useState(null)
+  const [allUsers, setAllUsers] = useState([]);
+
+   
+
+  const { appState } = useContext(AppContext);
+
 
   useEffect(() => {
+   
     socket.on("bmsg", msg => setMessages(messages => messages.concat(msg)));
 
     socket.on("connect", () => console.log("connected to socket"));
-  }, []);
+  }, [currentUser, allUsers]);
 
   const handleMessage = e => {
     setMessage(e.currentTarget.value);
